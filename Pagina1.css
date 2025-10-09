@@ -806,3 +806,37 @@ nav input { display: none; }
 .logo-img:hover {
     transform: scale(1.1);
 }
+/* Contenedor de los botones */
+.button-group.cyber-buttons {
+  display: flex;
+  flex-direction: column;      /* Coloca los botones en columna */
+  align-items: center;         /* Centra los botones en horizontal */
+  gap: 20px;                   /* Espacio entre los botones */
+  margin-top: 20px;            /* Espacio superior desde el título o descripción */
+}
+
+/* Estilos generales de los botones */
+.button-group.cyber-buttons .custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;                   /* Espacio entre el ícono y el texto */
+  width: 240px;                /* Mismo ancho para todos */
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(45deg, #ff0033, #cc0022);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.button-group.cyber-buttons .custom-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6);
+  background: linear-gradient(45deg, #ff1a40, #cc0033);
+}
