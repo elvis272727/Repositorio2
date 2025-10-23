@@ -840,7 +840,6 @@ nav input { display: none; }
   box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6);
   background: linear-gradient(45deg, #ff1a40, #cc0033);
 }
-/* ===== BOTÓN GITHUB ROJO/NEGRO PULIDO ===== */
 .github-section {
   display: flex;
   justify-content: center;
@@ -870,7 +869,7 @@ nav input { display: none; }
   overflow: hidden;
 }
 
-/* efecto de luz al pasar el cursor */
+/* Animación de luz al pasar el mouse */
 .github-btn::before {
   content: "";
   position: absolute;
@@ -887,16 +886,16 @@ nav input { display: none; }
   left: 120%;
 }
 
-/* color al pasar el cursor */
 .github-btn:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 0 20px rgba(255, 0, 51, 0.8);
 }
 
-/* icono de GitHub */
+/* Ícono de GitHub corregido */
 .github-icon {
   width: 22px;
   height: 22px;
+  object-fit: contain;
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
@@ -904,11 +903,3 @@ nav input { display: none; }
 .github-btn:hover .github-icon {
   transform: rotate(10deg) scale(1.1);
 }
-
-/* texto */
-.github-btn span {
-  position: relative;
-  z-index: 2;
-}
-
-
